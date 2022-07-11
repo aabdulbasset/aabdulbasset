@@ -1,13 +1,27 @@
 * {
+  box-sizing: border-box;
   font-family: "Finlandica", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #1a1234;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
 .nav {
   width: 100%;
-  background-color: #0F3325;
+  margin-top: 3vh;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
 }
@@ -77,8 +91,67 @@
   display: none;
 }
 
+.small-text {
+  font-size: 2em;
+}
+
+.medium-text {
+  font-size: 3rem;
+}
+
+.large-text {
+  font-size: 4rem;
+}
+.large-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-text {
+  font-size: 2rem;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  flex-basis: 100vh;
+}
+
+.first {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first .typing {
+  width: 80%;
+  height: 65%;
+  color: #02cc45;
+}
+
+.second {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second .projects-container {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 3vw;
+  width: 90%;
+  height: 90%;
+  color: #02cc45;
+}
+
 .menu {
   background-color: transparent;
+  z-index: 99;
   border: none;
   cursor: pointer;
   display: flex;
@@ -123,6 +196,28 @@
   stroke-width: 6;
 }
 
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: none;
+  background-color: #0F3325;
+}
+.dropdown .dropdown-container {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+}
+.dropdown .dropdown-container a {
+  font-size: 3em;
+}
+
 @keyframes float-logo {
   0% {
     bottom: 0px;
@@ -159,6 +254,23 @@
   }
   .mobile-menu {
     display: flex;
+  }
+  .large-text {
+    font-size: 5vh;
+  }
+  .medium-text {
+    font-size: 4vh;
+  }
+  .small-text {
+    font-size: 2.5vh;
+  }
+  .ti-cursor {
+    z-index: 1;
+    font-size: 3.3vh !important;
+  }
+  .projects-container {
+    font-size: 2em !important;
+    margin-top: 10vh;
   }
 }
 
