@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 import typeit from "typeit";
-import locomotive from "locomotive-scroll";
 
 const projects = [
   {
@@ -171,23 +170,25 @@ projects.forEach((project) => {
   document.querySelector(".cards-container").appendChild(projectcard);
 });
 
-//
-let observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+let observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.6,
+});
 
-observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#index"));
+observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#about"));
+
 function handleIntersection(entries, observer) {
-  console.log(entries[0].target.id);
+  // console.log(entries[0].target.id);
   if (entries[0].target.id == "projects" && entries[0].isIntersecting) {
     removeAllSelected();
     addSelected(document.querySelector('a[href="#projects"]'));
-
     openProjects();
   } else if (
     entries[0].target.id == "projects" &&
     entries[0].isIntersecting == false
   ) {
+    removeAllSelected();
     closeProjects();
   }
   if (entries[0].target.id == "index" && entries[0].isIntersecting) {
@@ -229,8 +230,3 @@ function closeProjects() {
     .add("width")
     .to(".projects-container", { width: 0, duration: 0.3 }, "width");
 }
-
-const scroll = new locomotive({
-  smooth: true,
-  el: document.querySelector(".body-container"),
-});
