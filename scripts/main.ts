@@ -5,17 +5,17 @@ import typeit from "typeit";
 const projects = [
   {
     name: "Social dashboard",
-    img: "https://cdn.discordapp.com/attachments/667955622448332872/995799191878107318/unknown.png",
+    img: new URL("../assets/social-dashboard.jpg", import.meta.url),
     url: "https://aabdulbasset.github.io/social-media-dashboard-with-theme-switcher-master/",
   },
   {
     name: "Pomodoro",
-    img: "https://telegra.ph/file/70e4357916b2cb20576d4.jpg",
+    img: new URL("../assets/pomodoro.jpg", import.meta.url),
     url: "https://aabdulbasset.github.io/Prilliant/",
   },
   {
     name: "Landing page",
-    img: "https://telegra.ph/file/fa188f80534d224ca6a4f.jpg",
+    img: new URL("../assets/landing.jpg", import.meta.url),
     url: "https://aabdulbasset.github.io/fylo-dark-theme/",
   },
 ];
@@ -100,7 +100,7 @@ new typeit(".typing", {
   )
   .type(
     `<span class="small-text"> I'm currently a senior computer science student at Sixth of October University, Giza, Egypt.
-</br>I have always loved problem solving, so I picked up programming; specifically, Web Programming 🤗. 
+</br>I have always loved problem-solving, so I picked up programming; specifically, Web Programming 🤗. 
 I'm currently learning React, Docker and mastering Javascript.</span></br></br> <span class='footer-text'>So, What do you think 💭?</span>`
   )
   .go();
