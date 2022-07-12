@@ -1,20 +1,20 @@
 @import 'variables'
 
 .second
-
-    margin: auto
     display: flex
+    width: 80vw
     align-items: center
     justify-content: center
     .projects-container
         display: flex
+        z-index: 1
         flex-direction: column
         place-content: center
         margin-top: 3vh
         border: 1px solid $default-color
         border-radius: 10px
-        height: 80%
-        width: 70vw
+        height: 0
+        width: 0
         color: $default-color
         .typing-projects
             text-align: center
@@ -30,26 +30,24 @@
             display: flex
             border-bottom: 1px solid $default-color
 .cards-container
-    height: 90%
+    margin: 10px
     display: flex
-    margin: auto
     flex-direction: row
     align-items: center
     justify-content: center
-    width: 99%
-    flex-grow: 0
-    overflow: hidden
+    overflow: auto
     flex-wrap: wrap
+
     .project-card
         margin: 2px
-        height: 50%
-        width: 33%
+        height: calc(50% - 10px)
+        width: calc(30% + 40px)
         display: flex
         flex-direction: column
         position: relative
         overflow: hidden
         transition: all 0.5s ease-in-out
-
+        flex-grow: 1
         a
             min-height: 100%
             img

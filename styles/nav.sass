@@ -4,12 +4,12 @@
     margin-top: 3vh
     display: flex
     position: fixed
+    z-index: 99
     align-items: center
     justify-content: center
     .nav-container
         width: 95%
         min-height: 4rem
-
         display: flex
         justify-content: space-between
         align-items: center
@@ -34,6 +34,7 @@
     color: white
     margin-right: 1rem
     position: relative
+    z-index: 99
 
 .selected:after
     overflow: hidden
@@ -117,6 +118,7 @@
     height: 0
     display: none
     background-color: $nav-bg-color
+    z-index: 98
     .dropdown-container
         width: 100%
         height: inherit
@@ -124,7 +126,9 @@
         align-items: center
         justify-content: center
         flex-direction: column
-        z-index: 99
+        position: relative
+        z-index: 98
+
         a
             font-size: 3em
 

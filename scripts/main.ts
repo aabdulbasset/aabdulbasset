@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+
 import typeit from "typeit";
 
 const projects = [
@@ -128,6 +129,7 @@ function closeMenu() {
     .to(".dropdown", { height: 0, duration: 0.5 }, "up")
     .to(".dropdown-container a", { fontSize: 0, duration: 0.5 }, "up")
     .add("hide")
+    //.to(".projects-container", { display: "flex", duration: 0 }, "hide")
     .to(".dropdown", { display: "none", duration: 0.1 }, "hide")
     .to(".ti-cursor", { display: "inline", duration: 0.1 }, "hide");
 }
@@ -137,6 +139,7 @@ function openMenu() {
     .timeline()
     .add("display")
     .to(".dropdown", { display: "block", duration: 0.1 }, "display")
+    //.to(".projects-container", { display: "none", duration: 0 })
     .add("dropdown")
     .to(".dropdown", { height: "100%", duration: 0.5 }, "dropdown")
     .to(".dropdown-container a", { fontSize: "3em", duration: 0.5 }, "dropdown")
@@ -171,7 +174,7 @@ projects.forEach((project) => {
 });
 
 let observer = new IntersectionObserver(handleIntersection, {
-  threshold: 0.6,
+  threshold: 0.8,
 });
 
 observer.observe(document.querySelector("#index"));
@@ -179,6 +182,7 @@ observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#about"));
 
 function handleIntersection(entries, observer) {
+  console.log(entries);
   // console.log(entries[0].target.id);
   if (entries[0].target.id == "projects" && entries[0].isIntersecting) {
     removeAllSelected();
@@ -188,7 +192,6 @@ function handleIntersection(entries, observer) {
     entries[0].target.id == "projects" &&
     entries[0].isIntersecting == false
   ) {
-    removeAllSelected();
     closeProjects();
   }
   if (entries[0].target.id == "index" && entries[0].isIntersecting) {
@@ -201,32 +204,50 @@ function handleIntersection(entries, observer) {
     addSelected(document.querySelector('a[href="#about"]'));
   }
 }
-
+let width = window.innerWidth / 1.3 + "px";
+let height = window.innerHeight / 1.3 + "px";
 function openProjects() {
   gsap
     .timeline()
     .add("width")
-    .to(".projects-container", { width: "70vw", duration: 0.3 }, "width")
-    .add("height")
-    .to(".projects-container", { height: "80%", duration: 0.3 }, "height")
+    .to(
+      ".projects-container",
+      {
+        width: width,
+        height: height,
+        duration: 0.3,
+      },
+      "width"
+    )
     .add("add")
-    .to(".header-container", { display: "flex", duration: 0 }, "add")
-    .to(".project-card", { display: "flex", duration: 0 }, "add")
+    .to(
+      ".header-container, .project-card",
+      { display: "flex", duration: 0 },
+      "add"
+    )
     .add("display")
-    .to(".header-container", { opacity: 1, duration: 0.3 }, "add")
-    .to(".project-card", { opacity: 1, duration: 0.3 }, "add");
+    .to(
+      ".header-container, .project-card",
+      { opacity: 1, duration: 0.3 },
+      "add"
+    );
 }
 function closeProjects() {
   gsap
     .timeline()
     .add("hide")
-    .to(".header-container", { opacity: 0, duration: 0.3 }, "hide")
-    .to(".project-card", { opacity: 0, duration: 0.3 }, "hide")
-    .add("remove")
-    .to(".header-container", { display: "none", duration: 0 }, "remove")
-    .to(".project-card", { display: "none", duration: 0 }, "remove")
+    .to(
+      ".header-container, .project-card",
+      { opacity: 0, duration: 0.3 },
+      "hide"
+    )
+
     .add("height")
-    .to(".projects-container", { height: 0, duration: 0.3 }, "height")
-    .add("width")
-    .to(".projects-container", { width: 0, duration: 0.3 }, "width");
+    .to(".projects-container", { height: 0, width: 0, duration: 0.3 }, "height")
+    .add("remove")
+    .to(
+      ".header-container,.project-card",
+      { display: "none", duration: 0 },
+      "remove"
+    );
 }
