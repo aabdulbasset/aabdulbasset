@@ -36,6 +36,8 @@
     align-items: center
     justify-content: center
     overflow: auto
+    &::-webkit-scrollbar
+        display: none
     flex-wrap: wrap
 
     .project-card
@@ -67,12 +69,12 @@
 
     .project-name
         border-radius: 2px
-        background: $default-color
+        background: $nav-bg-color
         text-align: center
         transition: all 0.4s ease-in-out
-        color: white
+        color: $hover-color
         font-size: 1.5rem
-        text-align: center
+
         font-weight: 500
 .circles
     display: flex

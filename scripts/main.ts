@@ -13,6 +13,11 @@ const projects = [
     img: "https://telegra.ph/file/70e4357916b2cb20576d4.jpg",
     url: "https://aabdulbasset.github.io/Prilliant/",
   },
+  {
+    name: "Landing page",
+    img: "https://telegra.ph/file/fa188f80534d224ca6a4f.jpg",
+    url: "https://aabdulbasset.github.io/fylo-dark-theme/",
+  },
 ];
 //Cursor
 const navElements = document.querySelectorAll(".nav-links a");
@@ -170,7 +175,7 @@ projects.forEach((project) => {
   projectcardname.innerHTML = project.name;
   projectcard.appendChild(projectlink);
   projectcard.appendChild(projectcardname);
-  document.querySelector(".cards-container").appendChild(projectcard);
+  document.querySelector(".cards-container").prepend(projectcard);
 });
 
 let observer = new IntersectionObserver(handleIntersection, {
