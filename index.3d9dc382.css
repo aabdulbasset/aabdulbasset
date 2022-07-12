@@ -1,0 +1,108 @@
+.second {
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.second .projects-container {
+  z-index: 1;
+  height: 76.9231vh;
+  width: 76.9231vw;
+  color: #02cc45;
+  border: 1px solid #02cc45;
+  border-radius: 10px;
+  flex-direction: column;
+  place-content: center;
+  margin-top: 3vh;
+  display: flex;
+}
+
+.second .projects-container .typing-projects {
+  text-align: center;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1vw;
+  display: flex;
+}
+
+.second .projects-container .header-container {
+  border-bottom: 1px solid #02cc45;
+  display: flex;
+  position: relative;
+}
+
+.cards-container {
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  overflow: auto;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-container .project-card {
+  height: calc(50% - 10px);
+  width: calc(30% + 40px);
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 2px;
+  transition: all .5s ease-in-out;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-container .project-card a {
+  min-height: 100%;
+}
+
+.cards-container .project-card a img {
+  object-fit: cover;
+  filter: grayscale(90%);
+  height: 100%;
+  width: 100%;
+  border: 1px solid #02cc45;
+  transition: all .4s ease-in-out;
+}
+
+.cards-container .project-card:hover a img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.cards-container .project-card:hover .project-name {
+  transform: translateY(-100%);
+}
+
+.cards-container .project-name {
+  text-align: center;
+  color: #0f5;
+  background: #0f3325;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all .4s ease-in-out;
+}
+
+.circles {
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #02cc45;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/*# sourceMappingURL=index.3d9dc382.css.map */
