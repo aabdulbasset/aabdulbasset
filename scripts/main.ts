@@ -18,6 +18,11 @@ const projects = [
     img: new URL("../assets/landing.jpg", import.meta.url),
     url: "https://aabdulbasset.github.io/fylo-dark-theme/",
   },
+  {
+    name: "Next estore",
+    img: new URL("../assets/nextstore.jpg", import.meta.url),
+    url: "https://nextstore.netlify.app"
+  }
 ];
 //Cursor
 const navElements = document.querySelectorAll(".nav-links a");
@@ -167,7 +172,7 @@ projects.forEach((project) => {
   projectlink.href = project.url;
   projectlink.target = "_blank";
   let projectcardimg = document.createElement("img");
-  projectcardimg.src = project.img;
+  projectcardimg.src = project.img as unknown as string;
   projectcardimg.classList.add("image");
   projectlink.appendChild(projectcardimg);
   let projectcardname = document.createElement("div");
