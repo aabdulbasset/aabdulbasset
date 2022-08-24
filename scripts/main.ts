@@ -2,6 +2,54 @@ import { gsap } from "gsap";
 
 import typeit from "typeit";
 
+const skills = [
+  {
+    type: "language",
+    name: "HTML & CSS",
+  },
+  {
+    type: "language",
+    name: "Javascript",
+  },
+  {
+    type: "language",
+    name: "Python",
+  },
+  {
+    type: "framework",
+    name: "Next.js",
+  },
+  {
+    type: "framework",
+    name: "React",
+  },
+  {
+    type: "framework",
+    name: "TailwindCSS",
+  },
+  {
+    type: "framework",
+    name: "Express.js",
+  },
+  {
+    type: "framework",
+    name: "Django",
+  },
+  {
+    type: "framework",
+    name: "Bootstrap",
+  },
+  {
+    type: "database",
+    name: "Postgres",
+  },
+
+  {
+    type: "database",
+    name: "SQLlite",
+  },
+];
+
 const projects = [
   {
     name: "Social dashboard",
@@ -21,8 +69,8 @@ const projects = [
   {
     name: "Next estore",
     img: new URL("../assets/nextstore.jpg", import.meta.url),
-    url: "https://nextstore.netlify.app"
-  }
+    url: "https://nextstore.netlify.app",
+  },
 ];
 //Cursor
 const navElements = document.querySelectorAll(".nav-links a");
@@ -36,7 +84,6 @@ navElements.forEach((element) => {
   // Selector
   element.addEventListener("click", (e) => {
     removeAllSelected();
-    let ee = e as PointerEvent;
     addSelected(e.target);
     removeCursor();
   });
@@ -104,7 +151,7 @@ new typeit(".typing", {
     { delay: 100 }
   )
   .type(
-    `<span class="small-text"> I'm currently a senior computer science student at Sixth of October University, Giza, Egypt.
+    `<span class="small-text"> I'm currently a senior computer science student.
 </br>I have always loved problem-solving, so I picked up programming; specifically, Web Programming 🤗. 
 I'm currently learning React, Docker and mastering Javascript.</span></br></br> <span class='footer-text'>So, What do you think 💭?</span>`
   )
@@ -120,15 +167,9 @@ new typeit(".typing-projects", {
 
 /***********************  Mobile menu */
 
-let button = document
-  .querySelector(".menu")
-  .addEventListener("click", handleClick);
+document.querySelector(".menu").addEventListener("click", handleClick);
 function checkOpened() {
-  if (document.querySelector(".dropdown").classList.contains("opened")) {
-    return true;
-  } else {
-    return false;
-  }
+  return document.querySelector(".dropdown").classList.contains("opened");
 }
 function closeMenu() {
   document.querySelector(".dropdown").classList.remove("opened");
@@ -155,7 +196,7 @@ function openMenu() {
     .to(".dropdown-container a", { fontSize: "3em", duration: 0.5 }, "dropdown")
     .to(".ti-cursor", { display: "none", duration: 0.1 }, "dropdown");
 }
-function handleClick(e) {
+function handleClick() {
   let isOpened = checkOpened();
   if (isOpened) {
     closeMenu();
@@ -191,7 +232,7 @@ observer.observe(document.querySelector("#index"));
 observer.observe(document.querySelector("#projects"));
 observer.observe(document.querySelector("#about"));
 
-function handleIntersection(entries, observer) {
+function handleIntersection(entries) {
   console.log(entries);
   // console.log(entries[0].target.id);
   if (entries[0].target.id == "projects" && entries[0].isIntersecting) {
@@ -261,3 +302,19 @@ function closeProjects() {
       "remove"
     );
 }
+
+let skillIconsContainer = document.querySelector(".skills-icons-container");
+let icon;
+skills.forEach((skill) => {
+  if (skill.type == "framework") {
+    icon = '<i class="fa-solid fa-cubes"></i>';
+  } else if (skill.type == "language") {
+    icon = `<i class="fa-solid fa-cube"></i>`;
+  } else if (skill.type == "database") {
+    icon = `<i class="fa-solid fa-database"></i>`;
+  }
+  let skillItemElement = document.createElement("div");
+  skillItemElement.classList.add("skill-item");
+  skillItemElement.innerHTML = `${icon} ${skill.name}`;
+  skillIconsContainer.appendChild(skillItemElement);
+});
