@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: Finlandica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: #1a1234;
+  position: relative;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+section {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1234;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #02cc45;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.body-container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.2f9cb370.css.map */

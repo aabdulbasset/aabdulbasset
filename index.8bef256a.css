@@ -1,0 +1,50 @@
+.about-container {
+  color: #0f5;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.third {
+  width: 70%;
+}
+
+.telda {
+  color: #12488b;
+}
+
+.link {
+  color: #d4d4d4;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.contact {
+  margin: 5px 0;
+}
+
+.skills-header {
+  font-size: 48px;
+}
+
+#skills-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax 0;
+  display: flex;
+}
+
+.skills-icons-container {
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3vmax 0;
+  display: flex;
+}
+
+.skill-item {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=index.8bef256a.css.map */
