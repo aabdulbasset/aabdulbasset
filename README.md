@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aabdulbasset&label=Profile%20views&color=0e75b6&style=flat" alt="aabdulbasset" /> </p>
 
-- 🌱 I’m currently learning **React, Express, Docker**
+- 🌱 I’m currently learning **Angular, Kubernetes, Docker**
 
 - 📫 How to reach me **aabdulbasset5@gmail.com**
 
