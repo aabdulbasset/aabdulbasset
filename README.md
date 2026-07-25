@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/aabdulbasset"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-aabdulbasset-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://linkedin.com/aabdulbasset"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/aabdulbasset"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:aabdulbasset5@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-aabdulbasset5@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
@@ -37,7 +37,7 @@ Four years of building products that real people use, including the e-commerce p
 | Layer | Stack | What that means |
 |---|---|---|
 | **L1 · Frontend** | TypeScript · React · Next.js · React Native · Tailwind · Ant Design · MUI · ShadCN | Figma in, production interface out. React Query for the data, Zod and React Hook Form for the edges. |
-| **L2 · Backend** | Go · REST APIs · Laravel · PHP · Python | Go services in production at Travware — API design, performance, and errors you can actually debug. |
+| **L2 · Backend** | Go · REST APIs · Laravel · PHP · Python | Go services in production — API design, performance, and errors you can actually debug. |
 | **L3 · Data** | PostgreSQL · MongoDB · Redis · ClickHouse · GraphQL | The query and caching layer — where the data gets fetched once instead of five times. |
 | **L4 · Infra** | Docker · Docker Compose · Linux · Git | Containerized so it runs the same on your machine and on the Linux box it deploys to. |
 
@@ -60,8 +60,7 @@ Built alone: a paginated content feed, a user-following system, and real-time UI
 
 | Role | Company | When |
 |---|---|---|
-| Full-Stack Software Engineer | **Travware** | Mar 2025 – Present |
-| Frontend Developer *(contract)* | **deXpose** | Apr 2024 – Feb 2026 |
+| Frontend Developer *(contract)* | **deXpose** | Apr 2024 – Present |
 | Full-Stack Developer *(contract)* | **Startup Confidential** | Aug 2024 – Mar 2025 |
 | Frontend Developer *(contract)* | **Iknology** | Nov 2023 – Sep 2024 |
 | Freelance Developer | — | 2022 – 2023 |
