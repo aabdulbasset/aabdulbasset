@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Abdulbasset — Full-Stack Software Engineer</title>
+  <meta name="description" content="Ahmed Abdulbasset — full-stack software engineer in Cairo, working remote. React and Next.js interfaces, Go services behind them, shipped in Docker.">
+  <meta name="theme-color" content="#0A0910">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0910'/%3E%3Cg fill='none' stroke='%23E8A33D' stroke-width='2.4' stroke-linejoin='round'%3E%3Cpath d='M32 14 48 22 32 30 16 22Z'/%3E%3C/g%3E%3Cg fill='none' stroke='%237C6FD6' stroke-width='2.4' stroke-linejoin='round' opacity='.85'%3E%3Cpath d='M32 26 48 34 32 42 16 34Z'/%3E%3Cpath d='M32 38 48 46 32 54 16 46Z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=5">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js?v=5" defer></script>
+</head>
+<body id="top">
+
+  <!-- ============ the space: fixed lit backdrop ============ -->
+  <div class="space" aria-hidden="true">
+    <span class="space__glow space__glow--key"></span>
+    <span class="space__glow space__glow--rim"></span>
+    <div class="space__dust" data-par="0.06"></div>
+    <div class="space__dust space__dust--near" data-par="0.16"></div>
+    <div class="space__floor"><div class="space__grid" data-par="0.10"></div></div>
+    <div class="space__vignette"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+  <!-- ============ nav ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#top">
+        <span class="nav__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        Ahmed Abdulbasset
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a class="nav__cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ hero ============ -->
+    <section class="hero">
+      <div class="hero__inner container">
+
+        <div class="hero__text">
+          <p class="eyebrow" data-in="1"><span class="pulse"></span>Available for new projects</p>
+          <h1 class="hero__title" data-split>Full-stack, <em>all the way down.</em></h1>
+          <p class="hero__desc" data-in="2">React and Next.js interfaces, Go services behind them, Docker underneath. I build every layer myself — from the Figma file to the container running on the server.</p>
+          <div class="hero__actions" data-in="3">
+            <a class="btn btn--primary" href="#work">See the work</a>
+            <a class="btn btn--ghost" href="#contact">Start a project</a>
+          </div>
+        </div>
+
+        <div class="hero__scene" data-scene>
+          <div class="rig" data-rig>
+            <div class="rig__spine"></div>
+            <div class="slab" style="--i:0" data-tint="fe">
+              <span class="slab__id">L1</span>
+              <span class="slab__name">Frontend</span>
+              <span class="slab__edge"></span>
+            </div>
+            <div class="slab" style="--i:1" data-tint="be">
+              <span class="slab__id">L2</span>
+              <span class="slab__name">Backend</span>
+              <span class="slab__edge"></span>
+            </div>
+            <div class="slab" style="--i:2" data-tint="da">
+              <span class="slab__id">L3</span>
+              <span class="slab__name">Data</span>
+              <span class="slab__edge"></span>
+            </div>
+            <div class="slab" style="--i:3" data-tint="in">
+              <span class="slab__id">L4</span>
+              <span class="slab__name">Infra</span>
+              <span class="slab__edge"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <dl class="hero__facts container" data-in="4">
+        <div class="fact"><dt>Experience</dt><dd>4+ years</dd></div>
+        <div class="fact"><dt>Shipped</dt><dd>23 projects</dd></div>
+        <div class="fact"><dt>Clients</dt><dd>12</dd></div>
+        <div class="fact"><dt>Based</dt><dd>Cairo, remote</dd></div>
+      </dl>
+
+      <a class="hero__scroll" href="#about" data-in="5"><span></span>Scroll</a>
+    </section>
+
+    <!-- ============ marquee band ============ -->
+    <div class="band" aria-label="Core technologies">
+      <div class="band__track" data-marquee>
+        <p class="band__row">
+          <span>React</span><span>TypeScript</span><span>Next.js</span><span>React Native</span>
+          <span>Go</span><span>TailwindCSS</span><span>React Query</span><span>Zustand</span>
+          <span>Zod</span><span>Docker</span><span>Linux</span><span>Git</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ============ about ============ -->
+    <section id="about" class="section container">
+      <p class="tag reveal">About</p>
+      <h2 class="title reveal">I own features <em>end to end</em></h2>
+
+      <div class="about">
+        <div class="about__text">
+          <p class="about__lead reveal">Four years of building products that real people use — including the e-commerce platform behind the largest computer hardware retailer in Egypt.</p>
+          <p class="reveal">Most engineers hand off at a boundary — design to frontend, frontend to API, API to deploy. I'd rather hold the whole thread. At Startup Confidential I owned both the frontend and the backend architecture of a social platform, then built its React Native companion app. At Travware I write the Next.js interface and the Go service it talks to.</p>
+          <p class="reveal">I started freelancing in 2022 while studying computer science, and I still keep my own product running: Qarenly, a search engine over product listings pulled from stores across Egypt.</p>
+          <a class="link-arrow reveal" href="#contact">Let's build something <span>→</span></a>
+        </div>
+
+        <div class="about__stats" data-tilt>
+          <div class="stat reveal"><span class="stat__num">4+</span><span class="stat__label">Years experience</span></div>
+          <div class="stat reveal"><span class="stat__num">23</span><span class="stat__label">Projects shipped</span></div>
+          <div class="stat reveal"><span class="stat__num">12</span><span class="stat__label">Clients served</span></div>
+          <div class="stat reveal"><span class="stat__num">2022</span><span class="stat__label">Building since</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ stack — the signature ============ -->
+    <section id="stack" class="stackwrap" data-stack>
+      <div class="stackwrap__sticky">
+        <div class="stackwrap__inner container">
+
+          <div class="stackwrap__scene" data-scene>
+            <div class="rig rig--big" data-rig data-rig-exploded>
+              <div class="rig__spine"></div>
+              <div class="slab" style="--i:0" data-tint="fe" data-slab="0">
+                <span class="slab__id">L1</span>
+                <span class="slab__name">Frontend</span>
+                <span class="slab__edge"></span>
+              </div>
+              <div class="slab" style="--i:1" data-tint="be" data-slab="1">
+                <span class="slab__id">L2</span>
+                <span class="slab__name">Backend</span>
+                <span class="slab__edge"></span>
+              </div>
+              <div class="slab" style="--i:2" data-tint="da" data-slab="2">
+                <span class="slab__id">L3</span>
+                <span class="slab__name">Data</span>
+                <span class="slab__edge"></span>
+              </div>
+              <div class="slab" style="--i:3" data-tint="in" data-slab="3">
+                <span class="slab__id">L4</span>
+                <span class="slab__name">Infra</span>
+                <span class="slab__edge"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stackwrap__readout">
+            <p class="tag">Stack</p>
+            <h2 class="title title--sm">Four layers,<br>one engineer</h2>
+            <ol class="layers">
+              <li class="layer" data-row="0">
+                <span class="layer__id">L1</span>
+                <div class="layer__body">
+                  <h3>Frontend</h3>
+                  <p class="layer__tech">TypeScript · React · Next.js · React Native · Tailwind · Ant Design · MUI · ShadCN</p>
+                  <div class="layer__reveal"><p class="layer__note">Figma in, production interface out. React Query for the data, Zod and React Hook Form for the edges.</p></div>
+                </div>
+              </li>
+              <li class="layer" data-row="1">
+                <span class="layer__id">L2</span>
+                <div class="layer__body">
+                  <h3>Backend</h3>
+                  <p class="layer__tech">Go · REST APIs · Laravel · PHP · Python</p>
+                  <div class="layer__reveal"><p class="layer__note">Go services in production at Travware — API design, performance, and errors you can actually debug.</p></div>
+                </div>
+              </li>
+              <li class="layer" data-row="2">
+                <span class="layer__id">L3</span>
+                <div class="layer__body">
+                  <h3>Data</h3>
+                  <p class="layer__tech">PostgreSQL · MongoDB · Redis · ClickHouse · GraphQL</p>
+                  <div class="layer__reveal"><p class="layer__note">The query and caching layer — where the data gets fetched once instead of five times.</p></div>
+                </div>
+              </li>
+              <li class="layer" data-row="3">
+                <span class="layer__id">L4</span>
+                <div class="layer__body">
+                  <h3>Infra</h3>
+                  <p class="layer__tech">Docker · Docker Compose · Linux · Git</p>
+                  <div class="layer__reveal"><p class="layer__note">Containerized so it runs the same on your machine and on the Linux box it deploys to.</p></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ work ============ -->
+    <section id="work" class="section container">
+      <p class="tag reveal">Selected work</p>
+      <h2 class="title reveal">Things I've <em>shipped</em></h2>
+
+      <div class="cards">
+        <article class="card reveal" data-tilt>
+          <a class="card__link" href="https://sigma-computer.com" target="_blank" rel="noopener">
+            <div class="card__plate">
+              <span class="card__index">01</span>
+              <span class="card__glare"></span>
+              <span class="card__art card__art--sigma" aria-hidden="true"></span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Sigma Computer</h3>
+              <p class="card__desc">The e-commerce platform for the largest computer hardware retailer in Egypt — product catalogs, browsing, and online purchasing at retail traffic. A modular React architecture with client-side rendering tuned so moving between products doesn't wait on the network.</p>
+              <p class="card__tags">Next.js · React · TailwindCSS · 2024</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="card reveal" data-tilt>
+          <a class="card__link" href="https://qarenly.com" target="_blank" rel="noopener">
+            <div class="card__plate">
+              <span class="card__index">02</span>
+              <span class="card__glare"></span>
+              <span class="card__art card__art--qarenly" aria-hidden="true"></span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Qarenly</h3>
+              <p class="card__desc">My own product, not client work: a price-comparison site that pulls product listings from stores across Egypt and puts a search engine on top of them. Aggregation, indexing, and interface — end to end, by me.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="card card--wide reveal" data-tilt>
+          <div class="card__link">
+            <div class="card__body">
+              <h3 class="card__name">Social platform — Startup Confidential</h3>
+              <p class="card__desc">Built alone: a paginated content feed, a user-following system, and real-time UI interactions on the web, plus a companion mobile app. I owned the frontend and the backend architecture.</p>
+              <p class="card__tags">Next.js · Vite · React Query · TailwindCSS · Zod · React Native · Expo</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--wide reveal" data-tilt>
+          <a class="card__link" href="https://github.com/aabdulbasset" target="_blank" rel="noopener">
+            <div class="card__body">
+              <h3 class="card__name">More on GitHub</h3>
+              <p class="card__desc">Experiments, open source, and the older work that taught me the expensive lessons.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ experience ============ -->
+    <section id="experience" class="section container">
+      <p class="tag reveal">Experience</p>
+      <h2 class="title reveal">Where I've <em>been</em></h2>
+
+      <ol class="cv" data-depth-list>
+        <li class="cv__row reveal">
+          <span class="cv__period">Mar 2025 — Present</span>
+          <div class="cv__body">
+            <h3>Full-Stack Software Engineer <span class="cv__co">Travware</span></h3>
+            <p>Full-stack systems on Next.js and React — React Query, Zustand, Zod, React Hook Form — backed by Go services I write and maintain for API design, performance, and reliability. I containerize with Docker, orchestrate with Compose, and deploy to Linux servers. Also maintain Laravel applications and automate internal workflows in Python.</p>
+          </div>
+        </li>
+        <li class="cv__row reveal">
+          <span class="cv__period">Apr 2024 — Feb 2026</span>
+          <div class="cv__body">
+            <h3>Frontend Developer <span class="cv__co">deXpose · Contract</span></h3>
+            <p>Internal admin dashboards and customer-facing platforms in React, Next.js, React Query, TailwindCSS, and Zod. Turned complex Figma designs into responsive production interfaces on Ant Design, Material UI, and Chakra UI, and cut redundant data fetching with caching and deduplication.</p>
+          </div>
+        </li>
+        <li class="cv__row reveal">
+          <span class="cv__period">Aug 2024 — Mar 2025</span>
+          <div class="cv__body">
+            <h3>Full-Stack Developer <span class="cv__co">Startup Confidential · Contract</span></h3>
+            <p>Independently built a social media platform on Next.js, Vite, React Query, TailwindCSS, and Zod — paginated feed, following system, real-time UI — plus a companion mobile app in React Native and Expo. Owned both the frontend and the backend architecture.</p>
+          </div>
+        </li>
+        <li class="cv__row reveal">
+          <span class="cv__period">Nov 2023 — Sep 2024</span>
+          <div class="cv__body">
+            <h3>Frontend Developer <span class="cv__co">Iknology · Contract</span></h3>
+            <p>Modernized a legacy frontend architecture with caching and deduplication, reducing API calls by 30%. Built responsive internal dashboards with real-time statistics for government clients, led frontend development, and enforced clean architecture patterns across the team.</p>
+          </div>
+        </li>
+        <li class="cv__row reveal">
+          <span class="cv__period">2022 — 2023</span>
+          <div class="cv__body">
+            <h3>Freelance Developer <span class="cv__co">Self-employed</span></h3>
+            <p>Started freelancing while studying computer science. This is where the Iknology work began, before it became a contract role.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ contact ============ -->
+    <section id="contact" class="contact container">
+      <p class="tag reveal">Contact</p>
+      <h2 class="contact__title reveal">Let's build<br>something <em>solid</em>.</h2>
+      <p class="contact__lead reveal">Tell me what you're making and where it's stuck. Full-time roles and freelance projects both welcome — I read everything.</p>
+
+      <a class="key reveal" href="mailto:aabdulbasset5@gmail.com">
+        <span class="key__face">aabdulbasset5@gmail.com</span>
+      </a>
+
+      <ul class="socials reveal">
+        <li><a href="https://github.com/aabdulbasset" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/aabdulbasset" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ============ footer ============ -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p>© 2026 Ahmed Abdulbasset — built with HTML, CSS, and vanilla JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
